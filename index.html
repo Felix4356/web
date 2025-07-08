@@ -6,23 +6,23 @@
     <title>Gesunde & Ungesunde Lebensmittel</title>
     <style>
         body { font-family: Arial, sans-serif; background: linear-gradient(120deg, #e0ffe0 0%, #ffe0e0 100%); margin: 0; padding: 0; }
-        header { background: #388e3c; color: white; text-align: center; padding: 40px 0 20px 0; }
-        nav { background: #c62828; text-align: center; padding: 10px 0; }
-        nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; }
-        nav a:hover { text-decoration: underline; }
-        main { max-width: 950px; margin: 30px auto; background: white; border-radius: 12px; box-shadow: 0 2px 12px rgba(67,160,71,0.08); padding: 30px; }
-        section { margin-bottom: 40px; }
-        h2 { color: #388e3c; }
-        h3 { color: #c62828; }
+        header { background: linear-gradient(90deg, #43a047 0%, #8bc34a 100%); color: white; text-align: center; padding: 40px 0 20px 0; box-shadow: 0 4px 16px rgba(67,160,71,0.13); }
+        nav { background: linear-gradient(90deg, #c62828 0%, #ff7043 100%); text-align: center; padding: 10px 0; box-shadow: 0 2px 8px rgba(198,40,40,0.10); }
+        nav a { color: #fffde7; margin: 0 15px; text-decoration: none; font-weight: bold; font-size: 1.13em; letter-spacing: 0.5px; transition: color 0.2s; }
+        nav a:hover { text-decoration: underline; color: #ffd600; }
+        main { max-width: 950px; margin: 30px auto; background: linear-gradient(120deg, #fffde7 0%, #e3f2fd 100%); border-radius: 16px; box-shadow: 0 2px 18px rgba(67,160,71,0.13); padding: 36px; }
+        section { margin-bottom: 44px; border-radius: 14px; box-shadow: 0 2px 10px rgba(33,150,243,0.07); background: linear-gradient(90deg, #fce4ec 0%, #e3f2fd 100%); padding: 18px 18px 8px 18px; }
+        h2 { color: #43a047; text-shadow: 1px 1px 0 #fffde7, 2px 2px 0 #b2dfdb; }
+        h3 { color: #c62828; text-shadow: 1px 1px 0 #fffde7; }
         ul { margin-left: 20px; }
         .food-list { display: flex; flex-wrap: wrap; gap: 30px; justify-content: space-between; }
-        .food-box { flex: 1 1 350px; background: #f7f7f7; border-radius: 10px; padding: 20px; box-shadow: 0 2px 8px rgba(200,40,40,0.06); margin-bottom: 20px; }
-        .food-box.healthy { border-left: 8px solid #43a047; }
-        .food-box.unhealthy { border-left: 8px solid #c62828; }
-        img { display: block; margin: 18px auto 10px auto; border-radius: 10px; box-shadow: 0 2px 8px rgba(67,160,71,0.10); }
-        .info { background: #fffde7; border-left: 6px solid #43a047; padding: 18px; border-radius: 8px; margin-bottom: 30px; }
-        .warning { background: #ffebee; border-left: 6px solid #c62828; padding: 18px; border-radius: 8px; margin-bottom: 30px; }
-        footer { background: #388e3c; color: white; text-align: center; padding: 18px 0; margin-top: 40px; }
+        .food-box { flex: 1 1 350px; background: linear-gradient(120deg, #f7f7f7 60%, #e1bee7 100%); border-radius: 14px; padding: 22px; box-shadow: 0 2px 12px rgba(200,40,40,0.10); margin-bottom: 20px; border: 3px solid #fffde7; position: relative; }
+        .food-box.healthy { border-left: 10px solid #43a047; border-top: 3px solid #8bc34a; }
+        .food-box.unhealthy { border-left: 10px solid #c62828; border-top: 3px solid #ff7043; }
+        img { display: block; margin: 18px auto 10px auto; border-radius: 12px; box-shadow: 0 2px 12px rgba(67,160,71,0.13); border: 4px solid #b2dfdb; background: #fff; }
+        .info { background: linear-gradient(90deg, #fffde7 60%, #b2dfdb 100%); border-left: 8px solid #43a047; padding: 20px; border-radius: 10px; margin-bottom: 32px; box-shadow: 0 2px 8px rgba(67,160,71,0.10); }
+        .warning { background: linear-gradient(90deg, #ffebee 60%, #ffe0b2 100%); border-left: 8px solid #c62828; padding: 20px; border-radius: 10px; margin-bottom: 32px; box-shadow: 0 2px 8px rgba(198,40,40,0.10); }
+        footer { background: linear-gradient(90deg, #388e3c 0%, #43a047 100%); color: #fffde7; text-align: center; padding: 20px 0; margin-top: 44px; letter-spacing: 1px; font-size: 1.08em; box-shadow: 0 -2px 8px rgba(67,160,71,0.10); }
     </style>
 </head>
 <body>
@@ -47,26 +47,31 @@
                     <img src="https://placehold.co/300x120?text=Obst" width="300" height="120" alt="Obst">
                     <strong>Obst & Beeren</strong>
                     <p>Liefern viele Vitamine, Mineralstoffe und Ballaststoffe. Beispiele: Äpfel, Beeren, Orangen, Kiwis.</p>
+                    <p style="font-size:0.97em;color:#388e3c;">Tipp: Frisches Obst ist ideal als Snack und liefert natürliche Süße ohne zugesetzten Zucker.</p>
                 </div>
                 <div class="food-box healthy">
                     <img src="https://placehold.co/300x120?text=Gemüse" width="300" height="120" alt="Gemüse">
                     <strong>Gemüse</strong>
                     <p>Reich an Vitaminen, sekundären Pflanzenstoffen und Ballaststoffen. Beispiele: Brokkoli, Karotten, Spinat, Paprika.</p>
+                    <p style="font-size:0.97em;color:#388e3c;">Tipp: Verschiedene Gemüsesorten sorgen für Abwechslung und viele wichtige Nährstoffe.</p>
                 </div>
                 <div class="food-box healthy">
                     <img src="https://placehold.co/300x120?text=Vollkorn" width="300" height="120" alt="Vollkornprodukte">
                     <strong>Vollkornprodukte</strong>
                     <p>Enthalten komplexe Kohlenhydrate, Ballaststoffe und Mineralstoffe. Beispiele: Haferflocken, Vollkornbrot, Naturreis.</p>
+                    <p style="font-size:0.97em;color:#388e3c;">Hinweis: Vollkorn hält länger satt und unterstützt die Verdauung.</p>
                 </div>
                 <div class="food-box healthy">
                     <img src="https://placehold.co/300x120?text=N%C3%BCsse" width="300" height="120" alt="Nüsse und Samen">
                     <strong>Nüsse & Samen</strong>
                     <p>Gute Quellen für gesunde Fette, Eiweiß und Spurenelemente. Beispiele: Mandeln, Walnüsse, Chiasamen.</p>
+                    <p style="font-size:0.97em;color:#388e3c;">Tipp: Eine kleine Handvoll täglich reicht – sie sind sehr energiereich.</p>
                 </div>
                 <div class="food-box healthy">
                     <img src="https://placehold.co/300x120?text=Fisch" width="300" height="120" alt="Fisch">
                     <strong>Fisch</strong>
                     <p>Enthält Omega-3-Fettsäuren, wichtig für Herz und Gehirn. Beispiele: Lachs, Makrele, Hering.</p>
+                    <p style="font-size:0.97em;color:#388e3c;">Hinweis: 1–2 Portionen Fisch pro Woche werden empfohlen.</p>
                 </div>
             </div>
         </section>
@@ -82,26 +87,31 @@
                     <img src="https://placehold.co/300x120?text=Fast+Food" width="300" height="120" alt="Fast Food">
                     <strong>Fast Food</strong>
                     <p>Oft sehr fettig, salzig und kalorienreich. Beispiele: Burger, Pommes, Pizza.</p>
+                    <p style="font-size:0.97em;color:#c62828;">Achtung: Häufiger Verzehr kann zu Übergewicht und Herzproblemen führen.</p>
                 </div>
                 <div class="food-box unhealthy">
                     <img src="https://placehold.co/300x120?text=S%C3%BC%C3%9Figkeiten" width="300" height="120" alt="Süßigkeiten">
                     <strong>Süßigkeiten</strong>
                     <p>Enthalten viel Zucker und oft ungesunde Fette. Beispiele: Schokolade, Bonbons, Gummibärchen.</p>
+                    <p style="font-size:0.97em;color:#c62828;">Hinweis: Zucker fördert Karies und kann die Konzentration beeinträchtigen.</p>
                 </div>
                 <div class="food-box unhealthy">
                     <img src="https://placehold.co/300x120?text=Softdrinks" width="300" height="120" alt="Softdrinks">
                     <strong>Softdrinks</strong>
                     <p>Sehr zuckerhaltig, fördern Übergewicht und Karies. Beispiele: Cola, Limonade, Energydrinks.</p>
+                    <p style="font-size:0.97em;color:#c62828;">Tipp: Wasser oder ungesüßter Tee sind die bessere Wahl für den Durst.</p>
                 </div>
                 <div class="food-box unhealthy">
                     <img src="https://placehold.co/300x120?text=Fertiggerichte" width="300" height="120" alt="Fertiggerichte">
                     <strong>Fertiggerichte</strong>
                     <p>Oft stark verarbeitet, enthalten viele Zusatzstoffe, Salz und versteckte Fette.</p>
+                    <p style="font-size:0.97em;color:#c62828;">Hinweis: Frisch kochen ist meist gesünder und spart oft auch Geld.</p>
                 </div>
                 <div class="food-box unhealthy">
                     <img src="https://placehold.co/300x120?text=Weißbrot" width="300" height="120" alt="Weißbrot">
                     <strong>Weißbrot & Gebäck</strong>
                     <p>Wenig Ballaststoffe, viele schnelle Kohlenhydrate. Beispiele: Toast, Croissants, Kuchen.</p>
+                    <p style="font-size:0.97em;color:#c62828;">Tipp: Lieber zu Vollkorn-Alternativen greifen, sie machen länger satt.</p>
                 </div>
             </div>
         </section>
