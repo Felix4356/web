@@ -3,63 +3,111 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gesunde Lebensmittel</title>
+    <title>Gesunde & Ungesunde Lebensmittel</title>
     <style>
-        body { font-family: Arial, sans-serif; background: linear-gradient(120deg, #e0ffe0 0%, #e0f7fa 100%); margin: 0; padding: 0; }
-        header { background: #43a047; color: white; text-align: center; padding: 40px 0 20px 0; }
-        nav { background: #388e3c; text-align: center; padding: 10px 0; }
+        body { font-family: Arial, sans-serif; background: linear-gradient(120deg, #e0ffe0 0%, #ffe0e0 100%); margin: 0; padding: 0; }
+        header { background: #388e3c; color: white; text-align: center; padding: 40px 0 20px 0; }
+        nav { background: #c62828; text-align: center; padding: 10px 0; }
         nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; }
         nav a:hover { text-decoration: underline; }
-        main { max-width: 900px; margin: 30px auto; background: white; border-radius: 12px; box-shadow: 0 2px 12px rgba(67,160,71,0.08); padding: 30px; }
+        main { max-width: 950px; margin: 30px auto; background: white; border-radius: 12px; box-shadow: 0 2px 12px rgba(67,160,71,0.08); padding: 30px; }
         section { margin-bottom: 40px; }
         h2 { color: #388e3c; }
+        h3 { color: #c62828; }
         ul { margin-left: 20px; }
-        img { display: block; margin: 20px auto; border-radius: 10px; box-shadow: 0 2px 8px rgba(67,160,71,0.10); }
-        footer { background: #43a047; color: white; text-align: center; padding: 18px 0; margin-top: 40px; }
+        .food-list { display: flex; flex-wrap: wrap; gap: 30px; justify-content: space-between; }
+        .food-box { flex: 1 1 350px; background: #f7f7f7; border-radius: 10px; padding: 20px; box-shadow: 0 2px 8px rgba(200,40,40,0.06); margin-bottom: 20px; }
+        .food-box.healthy { border-left: 8px solid #43a047; }
+        .food-box.unhealthy { border-left: 8px solid #c62828; }
+        img { display: block; margin: 18px auto 10px auto; border-radius: 10px; box-shadow: 0 2px 8px rgba(67,160,71,0.10); }
+        footer { background: #388e3c; color: white; text-align: center; padding: 18px 0; margin-top: 40px; }
     </style>
 </head>
 <body>
     <header>
-        <h1>Gesunde Lebensmittel</h1>
-        <p>Wissenswertes, Tipps und Beispiele für eine ausgewogene Ernährung</p>
+        <h1>Gesunde & Ungesunde Lebensmittel</h1>
+        <p>Was tut dem Körper gut – und was sollte man lieber meiden?</p>
     </header>
     <nav>
-        <a href="#warum">Warum gesund essen?</a>
-        <a href="#beispiele">Beispiele</a>
+        <a href="#gesund">Gesunde Lebensmittel</a>
+        <a href="#ungesund">Ungesunde Lebensmittel</a>
         <a href="#tipps">Tipps</a>
     </nav>
     <main>
-        <section id="warum">
-            <h2>Warum sind gesunde Lebensmittel wichtig?</h2>
-            <p>Gesunde Lebensmittel liefern dem Körper wichtige Nährstoffe wie Vitamine, Mineralstoffe, Ballaststoffe und gesunde Fette. Sie stärken das Immunsystem, fördern die Konzentration, helfen beim Erhalt des Idealgewichts und beugen Krankheiten wie Diabetes, Herz-Kreislauf-Erkrankungen und Übergewicht vor.</p>
-            <img src="https://placehold.co/500x200?text=Obst+und+Gem%C3%BCse" width="500" height="200" alt="Obst und Gemüse">
+        <section id="gesund">
+            <h2>Gesunde Lebensmittel</h2>
+            <div class="food-list">
+                <div class="food-box healthy">
+                    <img src="https://placehold.co/300x120?text=Obst" width="300" height="120" alt="Obst">
+                    <strong>Obst & Beeren</strong>
+                    <p>Liefern viele Vitamine, Mineralstoffe und Ballaststoffe. Beispiele: Äpfel, Beeren, Orangen, Kiwis.</p>
+                </div>
+                <div class="food-box healthy">
+                    <img src="https://placehold.co/300x120?text=Gemüse" width="300" height="120" alt="Gemüse">
+                    <strong>Gemüse</strong>
+                    <p>Reich an Vitaminen, sekundären Pflanzenstoffen und Ballaststoffen. Beispiele: Brokkoli, Karotten, Spinat, Paprika.</p>
+                </div>
+                <div class="food-box healthy">
+                    <img src="https://placehold.co/300x120?text=Vollkorn" width="300" height="120" alt="Vollkornprodukte">
+                    <strong>Vollkornprodukte</strong>
+                    <p>Enthalten komplexe Kohlenhydrate, Ballaststoffe und Mineralstoffe. Beispiele: Haferflocken, Vollkornbrot, Naturreis.</p>
+                </div>
+                <div class="food-box healthy">
+                    <img src="https://placehold.co/300x120?text=N%C3%BCsse" width="300" height="120" alt="Nüsse und Samen">
+                    <strong>Nüsse & Samen</strong>
+                    <p>Gute Quellen für gesunde Fette, Eiweiß und Spurenelemente. Beispiele: Mandeln, Walnüsse, Chiasamen.</p>
+                </div>
+                <div class="food-box healthy">
+                    <img src="https://placehold.co/300x120?text=Fisch" width="300" height="120" alt="Fisch">
+                    <strong>Fisch</strong>
+                    <p>Enthält Omega-3-Fettsäuren, wichtig für Herz und Gehirn. Beispiele: Lachs, Makrele, Hering.</p>
+                </div>
+            </div>
         </section>
-        <section id="beispiele">
-            <h2>Beispiele für gesunde Lebensmittel</h2>
-            <ul>
-                <li><strong>Obst:</strong> Äpfel, Beeren, Orangen, Bananen, Kiwis</li>
-                <li><strong>Gemüse:</strong> Brokkoli, Karotten, Spinat, Paprika, Tomaten</li>
-                <li><strong>Vollkornprodukte:</strong> Haferflocken, Vollkornbrot, Naturreis, Quinoa</li>
-                <li><strong>Hülsenfrüchte:</strong> Linsen, Bohnen, Kichererbsen, Erbsen</li>
-                <li><strong>Nüsse & Samen:</strong> Mandeln, Walnüsse, Chiasamen, Leinsamen</li>
-                <li><strong>Fisch:</strong> Lachs, Makrele, Hering (reich an Omega-3-Fettsäuren)</li>
-                <li><strong>Milchprodukte:</strong> Naturjoghurt, Quark, Käse in Maßen</li>
-                <li><strong>Gesunde Öle:</strong> Olivenöl, Rapsöl, Leinöl</li>
-            </ul>
+        <section id="ungesund">
+            <h2 style="color:#c62828;">Ungesunde Lebensmittel</h2>
+            <div class="food-list">
+                <div class="food-box unhealthy">
+                    <img src="https://placehold.co/300x120?text=Fast+Food" width="300" height="120" alt="Fast Food">
+                    <strong>Fast Food</strong>
+                    <p>Oft sehr fettig, salzig und kalorienreich. Beispiele: Burger, Pommes, Pizza.</p>
+                </div>
+                <div class="food-box unhealthy">
+                    <img src="https://placehold.co/300x120?text=S%C3%BC%C3%9Figkeiten" width="300" height="120" alt="Süßigkeiten">
+                    <strong>Süßigkeiten</strong>
+                    <p>Enthalten viel Zucker und oft ungesunde Fette. Beispiele: Schokolade, Bonbons, Gummibärchen.</p>
+                </div>
+                <div class="food-box unhealthy">
+                    <img src="https://placehold.co/300x120?text=Softdrinks" width="300" height="120" alt="Softdrinks">
+                    <strong>Softdrinks</strong>
+                    <p>Sehr zuckerhaltig, fördern Übergewicht und Karies. Beispiele: Cola, Limonade, Energydrinks.</p>
+                </div>
+                <div class="food-box unhealthy">
+                    <img src="https://placehold.co/300x120?text=Fertiggerichte" width="300" height="120" alt="Fertiggerichte">
+                    <strong>Fertiggerichte</strong>
+                    <p>Oft stark verarbeitet, enthalten viele Zusatzstoffe, Salz und versteckte Fette.</p>
+                </div>
+                <div class="food-box unhealthy">
+                    <img src="https://placehold.co/300x120?text=Weißbrot" width="300" height="120" alt="Weißbrot">
+                    <strong>Weißbrot & Gebäck</strong>
+                    <p>Wenig Ballaststoffe, viele schnelle Kohlenhydrate. Beispiele: Toast, Croissants, Kuchen.</p>
+                </div>
+            </div>
         </section>
         <section id="tipps">
-            <h2>Tipps für eine gesunde Ernährung</h2>
+            <h2>Tipps für eine ausgewogene Ernährung</h2>
             <ul>
-                <li>Iss bunt und abwechslungsreich – je mehr Farben auf dem Teller, desto besser!</li>
                 <li>Bevorzuge frische, unverarbeitete Lebensmittel.</li>
-                <li>Trinke ausreichend Wasser (mind. 1,5–2 Liter pro Tag).</li>
-                <li>Reduziere Zucker, Fertigprodukte und stark verarbeitete Snacks.</li>
-                <li>Bewege dich regelmäßig und genieße dein Essen bewusst.</li>
+                <li>Trinke ausreichend Wasser und vermeide zuckerhaltige Getränke.</li>
+                <li>Iss abwechslungsreich und bunt – je mehr Farben, desto besser!</li>
+                <li>Reduziere Zucker, Salz und gesättigte Fette.</li>
+                <li>Genieße Süßes und Fast Food nur in Maßen.</li>
             </ul>
         </section>
     </main>
     <footer>
-        &copy; 2025 Gesunde Lebensmittel – Erstellt mit GitHub Copilot.
+        &copy; 2025 Gesunde & Ungesunde Lebensmittel – Erstellt mit GitHub Copilot.
     </footer>
 </body>
 </html>
+
