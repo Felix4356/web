@@ -20,6 +20,8 @@
         .food-box.healthy { border-left: 8px solid #43a047; }
         .food-box.unhealthy { border-left: 8px solid #c62828; }
         img { display: block; margin: 18px auto 10px auto; border-radius: 10px; box-shadow: 0 2px 8px rgba(67,160,71,0.10); }
+        .info { background: #fffde7; border-left: 6px solid #43a047; padding: 18px; border-radius: 8px; margin-bottom: 30px; }
+        .warning { background: #ffebee; border-left: 6px solid #c62828; padding: 18px; border-radius: 8px; margin-bottom: 30px; }
         footer { background: #388e3c; color: white; text-align: center; padding: 18px 0; margin-top: 40px; }
     </style>
 </head>
@@ -34,6 +36,10 @@
         <a href="#tipps">Tipps</a>
     </nav>
     <main>
+        <div class="info">
+            <strong>Warum ist Ernährung wichtig?</strong>
+            <p>Eine ausgewogene Ernährung liefert Energie, stärkt das Immunsystem und beugt Krankheiten vor. Sie sorgt für Wohlbefinden, Leistungsfähigkeit und ein langes, gesundes Leben.</p>
+        </div>
         <section id="gesund">
             <h2>Gesunde Lebensmittel</h2>
             <div class="food-list">
@@ -66,6 +72,10 @@
         </section>
         <section id="ungesund">
             <h2 style="color:#c62828;">Ungesunde Lebensmittel</h2>
+            <div class="warning">
+                <strong>Zu viel davon kann schaden!</strong>
+                <p>Ungesunde Lebensmittel enthalten oft viel Zucker, Fett, Salz oder Zusatzstoffe. Sie erhöhen das Risiko für Übergewicht, Diabetes und Herz-Kreislauf-Erkrankungen.</p>
+            </div>
             <div class="food-list">
                 <div class="food-box unhealthy">
                     <img src="https://placehold.co/300x120?text=Fast+Food" width="300" height="120" alt="Fast Food">
@@ -96,6 +106,7 @@
         </section>
         <section id="tipps">
             <h2>Tipps für eine ausgewogene Ernährung</h2>
+            <img src="https://quickchart.io/chart?c={type:'pie',data:{labels:['Gesunde Lebensmittel','Ungesunde Lebensmittel'],datasets:[{data:[70,30],backgroundColor:['#43a047','#c62828']}]} ,options:{plugins:{legend:{labels:{color:'black',font:{size:16}}}}}}" width="350" height="200" alt="Anteil gesunde vs. ungesunde Lebensmittel">
             <ul>
                 <li>Bevorzuge frische, unverarbeitete Lebensmittel.</li>
                 <li>Trinke ausreichend Wasser und vermeide zuckerhaltige Getränke.</li>
