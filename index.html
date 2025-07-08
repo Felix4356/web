@@ -5,16 +5,83 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tischtennis – Alles über den schnellen Sport</title>
     <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f7f7f7; }
-        header { background: #1a73e8; color: white; padding: 30px 0; text-align: center; }
-        nav { background: #1558b0; padding: 10px 0; text-align: center; }
-        nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; }
-        main { max-width: 900px; margin: 30px auto; background: white; padding: 30px; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
-        section { margin-bottom: 40px; }
-        h2 { color: #1a73e8; }
-        img { display: block; margin: 20px auto; border-radius: 8px; }
-        ul { margin-left: 20px; }
-        footer { background: #1a73e8; color: white; text-align: center; padding: 15px 0; margin-top: 40px; }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #f7f7f7 0%, #e0f7fa 100%);
+        }
+        header {
+            background: linear-gradient(90deg, #1a73e8 60%, #43e97b 100%);
+            color: white;
+            padding: 40px 0 25px 0;
+            text-align: center;
+            box-shadow: 0 4px 16px rgba(26,115,232,0.15);
+        }
+        nav {
+            background: linear-gradient(90deg, #1558b0 60%, #f7971e 100%);
+            padding: 12px 0;
+            text-align: center;
+            box-shadow: 0 2px 8px rgba(21,88,176,0.08);
+        }
+        nav a {
+            color: #fff;
+            margin: 0 18px;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 8px 18px;
+            border-radius: 20px;
+            transition: background 0.2s, color 0.2s;
+        }
+        nav a:hover {
+            background: #fff;
+            color: #1558b0;
+        }
+        main {
+            max-width: 950px;
+            margin: 35px auto;
+            background: white;
+            padding: 35px 35px 25px 35px;
+            border-radius: 16px;
+            box-shadow: 0 4px 24px rgba(0,0,0,0.10);
+        }
+        section {
+            margin-bottom: 45px;
+            padding: 25px 20px 20px 20px;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(67,233,123,0.07);
+        }
+        #geschichte { background: linear-gradient(90deg, #e3ffe6 60%, #b3c6ff 100%); }
+        #regeln { background: linear-gradient(90deg, #fffbe6 60%, #ffe0e3 100%); }
+        #ausruestung { background: linear-gradient(90deg, #e6f7ff 60%, #e6ffe6 100%); }
+        #spieler { background: linear-gradient(90deg, #ffe6fa 60%, #e6e6ff 100%); }
+        #fakten { background: linear-gradient(90deg, #fff0e6 60%, #e6fff7 100%); }
+        h2 {
+            color: #1a73e8;
+            margin-top: 0;
+            text-shadow: 1px 1px 0 #fff, 2px 2px 4px #b3c6ff44;
+        }
+        img {
+            display: block;
+            margin: 22px auto 10px auto;
+            border-radius: 10px;
+            box-shadow: 0 2px 12px rgba(26,115,232,0.10);
+        }
+        ul {
+            margin-left: 22px;
+        }
+        li {
+            margin-bottom: 7px;
+        }
+        footer {
+            background: linear-gradient(90deg, #1a73e8 60%, #43e97b 100%);
+            color: white;
+            text-align: center;
+            padding: 18px 0;
+            margin-top: 45px;
+            font-size: 1.1em;
+            letter-spacing: 1px;
+        }
     </style>
 </head>
 <body>
@@ -28,48 +95,78 @@
         <a href="#ausruestung">Ausrüstung</a>
         <a href="#spieler">Berühmte Spieler</a>
         <a href="#fakten">Fakten</a>
+        <a href="#weitere-sportarten">Weitere Sportarten</a>
     </nav>
     <main>
         <section id="geschichte">
             <h2>Geschichte des Tischtennis</h2>
-            <p>Tischtennis entstand Ende des 19. Jahrhunderts in England als Indoor-Variante des Tennis. Anfangs wurde es als "Ping Pong" bezeichnet. 1926 wurde der internationale Tischtennisverband (ITTF) gegründet und die ersten Weltmeisterschaften fanden statt. Heute ist Tischtennis eine der beliebtesten Sportarten weltweit, besonders in Asien und Europa.</p>
+            <p>Tischtennis entstand Ende des 19. Jahrhunderts in England als Indoor-Variante des Tennis. Anfangs wurde es als "Ping Pong" bezeichnet, da der Name den Klang des Balls auf dem Tisch nachahmt. Zunächst war es ein Gesellschaftsspiel für die Oberschicht, entwickelte sich aber schnell zu einer ernsthaften Sportart. 1926 wurde der internationale Tischtennisverband (ITTF) gegründet und die ersten Weltmeisterschaften fanden statt. In den 1950er Jahren revolutionierten neue Materialien wie der Schwammgummi die Spielweise. Heute ist Tischtennis eine der beliebtesten Sportarten weltweit, besonders in Asien und Europa. In China ist Tischtennis sogar Nationalsport und viele der besten Spieler kommen von dort.</p>
             <img src="2025_07_08_10_41_49_Clipboard.jpg234.jpg" width="400" height="200" alt="Tischtennis Bild">
         </section>
         <section id="regeln">
             <h2>Grundregeln</h2>
             <ul>
-                <li>Ein Spiel wird bis 11 Punkte gespielt (mindestens 2 Punkte Vorsprung).</li>
-                <li>Nach jeweils 2 Punkten wechselt der Aufschlag.</li>
-                <li>Ein Satz besteht meist aus 3 oder 4 Gewinnsätzen.</li>
-                <li>Der Ball muss beim Aufschlag zuerst auf der eigenen, dann auf der gegnerischen Seite aufspringen.</li>
-                <li>Berührt der Ball das Netz beim Aufschlag, wird wiederholt.</li>
+                <li>Ein Spiel wird bis 11 Punkte gespielt (mindestens 2 Punkte Vorsprung). Früher wurde bis 21 gespielt, aber die Regel wurde geändert, um das Spiel dynamischer zu machen.</li>
+                <li>Nach jeweils 2 Punkten wechselt der Aufschlag. Im Entscheidungssatz wechselt der Aufschlag nach jedem Punkt.</li>
+                <li>Ein Satz besteht meist aus 3 oder 4 Gewinnsätzen, je nach Turniermodus. Im Profibereich werden oft Best-of-7-Sätze gespielt.</li>
+                <li>Der Ball muss beim Aufschlag zuerst auf der eigenen, dann auf der gegnerischen Seite aufspringen. Ein korrekter Aufschlag ist entscheidend für einen fairen Spielbeginn.</li>
+                <li>Berührt der Ball das Netz beim Aufschlag, wird wiederholt. Dies nennt man "Netzaufschlag" oder "Let".</li>
+                <li>Der Ball darf die Tischkante berühren, zählt dann als gültig. Berührt er jedoch die Seite, ist der Ball aus.</li>
+                <li>Im Doppel muss der Aufschlag diagonal gespielt werden, im Einzel ist die Richtung frei wählbar.</li>
             </ul>
+            <p>Weitere Regeln betreffen z.B. die Schlägerkontrolle, die Bekleidung (meist helle Kleidung, damit der Ball sichtbar bleibt) und das Verhalten am Tisch. Fairness und Respekt sind wichtige Bestandteile des Sports.</p>
         </section>
         <section id="ausruestung">
             <h2>Ausrüstung</h2>
             <ul>
-                <li><strong>Schläger:</strong> Meist aus Holz und mit Gummi beschichtet.</li>
-                <li><strong>Ball:</strong> 40 mm Durchmesser, aus Kunststoff, wiegt 2,7 g.</li>
-                <li><strong>Tisch:</strong> 2,74 m lang, 1,525 m breit, 76 cm hoch, Netz in der Mitte.</li>
+                <li><strong>Schläger:</strong> Meist aus Holz und mit Gummi beschichtet. Es gibt verschiedene Beläge: Noppen innen, Noppen außen, Anti-Topspin oder sogar lange Noppen für spezielle Effekte. Die Wahl des Schlägers beeinflusst die Spielweise stark.</li>
+                <li><strong>Ball:</strong> 40 mm Durchmesser, aus Kunststoff, wiegt 2,7 g. Früher waren die Bälle aus Zelluloid, heute aus Plastik. Die Farbe ist meist weiß oder orange, damit der Ball gut sichtbar ist.</li>
+                <li><strong>Tisch:</strong> 2,74 m lang, 1,525 m breit, 76 cm hoch, Netz in der Mitte. Die Oberfläche ist matt und meist dunkelgrün oder blau, um Reflexionen zu vermeiden. Das Netz ist 15,25 cm hoch.</li>
+                <li><strong>Bekleidung:</strong> Funktionale Sportkleidung, meist Shorts und T-Shirt. Spezielle Tischtennisschuhe sorgen für guten Halt und schnelle Bewegungen.</li>
             </ul>
+            <p>Für den Wettkampfbetrieb werden Schläger und Bälle regelmäßig kontrolliert. Die Ausrüstung muss den Vorgaben des ITTF entsprechen.</p>
         </section>
         <section id="spieler">
             <h2>Berühmte Spieler</h2>
             <ul>
-                <li><strong>Jan-Ove Waldner</strong> (Schweden) – "Mozart des Tischtennis"</li>
-                <li><strong>Ma Long</strong> (China) – Mehrfacher Weltmeister und Olympiasieger</li>
-                <li><strong>Ding Ning</strong> (China) – Olympiasiegerin und Weltmeisterin</li>
-                <li><strong>Timo Boll</strong> (Deutschland) – Europameister und langjährige Nr. 1 Europas</li>
+                <li><strong>Jan-Ove Waldner</strong> (Schweden) – "Mozart des Tischtennis", einer der erfolgreichsten und beliebtesten Spieler aller Zeiten. Er gewann zahlreiche Welt- und Europameistertitel und war für seine Kreativität und Technik berühmt.</li>
+                <li><strong>Ma Long</strong> (China) – Mehrfacher Weltmeister und Olympiasieger, gilt als einer der besten Spieler der Geschichte. Seine Stärke liegt in seiner unglaublichen Präzision und Schnelligkeit.</li>
+                <li><strong>Ding Ning</strong> (China) – Olympiasiegerin und Weltmeisterin, bekannt für ihre Vielseitigkeit und mentale Stärke. Sie ist ein Vorbild für viele junge Spielerinnen weltweit.</li>
+                <li><strong>Timo Boll</strong> (Deutschland) – Europameister und langjährige Nr. 1 Europas. Er ist für seine Fairness, seine Rückhand und seine Konstanz bekannt und ein Idol vieler deutscher Nachwuchsspieler.</li>
+                <li><strong>Liu Guoliang</strong> (China) – Einer der erfolgreichsten Trainer und früher selbst Weltmeister. Er prägte das moderne chinesische Tischtennis maßgeblich.</li>
             </ul>
+            <p>Viele dieser Spieler haben den Sport durch ihre Spielweise, ihre Persönlichkeit und ihre Erfolge geprägt. Sie sind Vorbilder für Millionen von Fans und Nachwuchsspielern.</p>
         </section>
         <section id="fakten">
             <h2>Interessante Fakten</h2>
             <ul>
-                <li>Tischtennis ist seit 1988 olympisch.</li>
-                <li>Der Ball kann Geschwindigkeiten von über 100 km/h erreichen.</li>
-                <li>In China gibt es über 10 Millionen registrierte Spieler.</li>
-                <li>Die schnellste Ballwechselzeit liegt bei unter 0,2 Sekunden.</li>
+                <li>Tischtennis ist seit 1988 olympisch. Die ersten Goldmedaillen gingen an chinesische Spieler, die bis heute den Sport dominieren.</li>
+                <li>Der Ball kann Geschwindigkeiten von über 100 km/h erreichen. Besonders bei Topspin-Schlägen und schnellen Ballwechseln sind enorme Reaktionszeiten gefragt.</li>
+                <li>In China gibt es über 10 Millionen registrierte Spieler. Tischtennis ist dort Schulsport und wird in vielen Vereinen gefördert.</li>
+                <li>Die schnellste Ballwechselzeit liegt bei unter 0,2 Sekunden. Profis reagieren blitzschnell und spielen oft mehrere Meter hinter dem Tisch.</li>
+                <li>Der längste Ballwechsel dauerte über 8 Minuten und fand bei einem Rekordversuch statt.</li>
+                <li>Es gibt spezielle Schlägerbeläge, die den Spin und die Geschwindigkeit des Balls stark beeinflussen.</li>
             </ul>
+            <p>Tischtennis ist ein Sport für jedes Alter und fördert Reaktion, Konzentration und Koordination. Viele spielen ihn als Hobby, andere auf höchstem Wettkampfniveau.</p>
+        </section>
+        <section id="weitere-sportarten">
+            <h2>Weitere Sportarten</h2>
+            <section style="background: linear-gradient(90deg, #ffe6e6 60%, #e6ffe6 100%); margin-bottom: 20px; padding: 18px; border-radius: 10px;">
+                <h3>Badminton</h3>
+                <p>Badminton ist ein schneller Rückschlagsport, der mit einem Federball und leichten Schlägern gespielt wird. Das Spielfeld ist durch ein Netz geteilt. Ziel ist es, den Ball so über das Netz zu schlagen, dass der Gegner ihn nicht mehr regelgerecht zurückspielen kann. Badminton erfordert Schnelligkeit, Ausdauer und Reaktionsvermögen.</p>
+            </section>
+            <section style="background: linear-gradient(90deg, #e6e6ff 60%, #fffbe6 100%); margin-bottom: 20px; padding: 18px; border-radius: 10px;">
+                <h3>Tennis</h3>
+                <p>Tennis wird auf einem größeren Feld mit einem Filzball und stabileren Schlägern gespielt. Es gibt Einzel- und Doppelmatches. Die Ballwechsel sind oft lang und taktisch geprägt. Tennis ist olympisch und weltweit sehr populär, mit bekannten Turnieren wie Wimbledon oder den US Open.</p>
+            </section>
+            <section style="background: linear-gradient(90deg, #e6fff7 60%, #ffe6fa 100%); margin-bottom: 20px; padding: 18px; border-radius: 10px;">
+                <h3>Volleyball</h3>
+                <p>Volleyball ist ein Mannschaftssport, bei dem zwei Teams versuchen, den Ball über ein hohes Netz auf den Boden der gegnerischen Spielfeldhälfte zu spielen. Es gibt Hallen- und Beachvolleyball. Teamgeist, Sprungkraft und Koordination sind besonders wichtig.</p>
+            </section>
+            <section style="background: linear-gradient(90deg, #fffbe6 60%, #e6e6ff 100%); margin-bottom: 0; padding: 18px; border-radius: 10px;">
+                <h3>Fußball</h3>
+                <p>Fußball ist die weltweit beliebteste Mannschaftssportart. Zwei Teams mit je elf Spielern versuchen, den Ball ins gegnerische Tor zu schießen. Fußball fördert Ausdauer, Technik und Teamfähigkeit. Große Turniere wie die FIFA-Weltmeisterschaft begeistern Millionen von Fans.</p>
+            </section>
         </section>
     </main>
     <footer>
